@@ -162,6 +162,7 @@ function roundEnded(game) {
 }
 
 function drawWhiteCards(game, player, numberCards) {
+  "use strict";
   for (let i = 0; i < numberCards; i++) {
     var whiteIndex = Math.floor(Math.random() * game.deck.white.length);
     player.cards.push(game.deck.white[whiteIndex]);
